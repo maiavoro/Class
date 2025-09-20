@@ -1,0 +1,14 @@
+import math as m
+
+def factorial(n):
+  if n < 0:
+    return "Факториал определен"
+  else:
+    return m.factorial(n)  
+if name == "main":
+  try:
+    num = int(input("Введите целое неотрицательное число: "))
+    result = factorial(num)
+    print(f"Факториал числа {num} равен {result}")
+  except ValueError:
+    print("Ошибка: Введите целое число.")
